@@ -1,0 +1,139 @@
+.productInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.productInfoContent {
+  margin-top: 2rem;
+}
+
+.prodInfoTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 0.1rem;
+}
+
+.prodInfoHeading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 1.5rem 0;
+  width: 100%;
+}
+
+.prodInfoText {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.newPriceWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newPrice p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 1rem 0 0;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--Dark-grayish-blue);
+}
+
+.cartBtns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.minusSym {
+  margin-right: 2rem;
+  fill: #ff7e1b;
+}
+
+.plusSym {
+  margin-left: 2rem;
+}
+
+.minusSym:hover,
+.plusSym:hover {
+  fill: var(--Light-orange) !important;
+}
+
+.cartIconBtn {
+  fill: black;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+}
+
+.cartNumBtn,
+.cartAddBtn {
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.count {
+  min-width: 17px;
+}
+
+.cartNumBtn {
+  padding: 1rem 2rem;
+  background-color: var(--Light-grayish-blue);
+  transition: background-color 0.3s ease-in;
+  min-width: 210px;
+}
+
+.cartAddBtn:hover {
+  background-color: var(--Light-orange);
+}
+
+.cartAddBtn {
+  padding: 1rem 3rem;
+  background-color: var(--Orange);
+  margin-top: 2rem;
+}
+
+/* For Desktop  */
+@media (min-width: 376px) {
+  .cartBtns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cartNumBtn {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  .cartAddBtn {
+    margin-top: 0;
+    padding: 1rem 2.5rem;
+  }
+
+  .productInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 4rem 0 4rem;
+  }
+
+  .productInfoContent {
+    max-width: 27rem;
+    margin-top: 0;
+  }
+
+  .prodInfoHeading {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}

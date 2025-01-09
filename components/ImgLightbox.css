@@ -1,0 +1,14 @@
+.lightbox .modal-content {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.lightbox .modal-header {
+  border-bottom: none !important;
+}
+
+.activeImgContainter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

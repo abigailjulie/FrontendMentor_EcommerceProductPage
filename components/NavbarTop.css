@@ -1,0 +1,75 @@
+.navbarTop {
+  width: 100%;
+}
+
+.navbarTop .navbarBrand {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Kumbh Sans", serif;
+  color: var(--Black-75opacity);
+}
+
+.navbarTop .navLinks .nav-link {
+  color: var(--Black-75opacity);
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 1.5rem;
+  min-height: 4rem;
+}
+
+/* Link hover effects */
+.navbarTop .navLinks .nav-link:hover,
+.navbarTop .navLinks .nav-link:focus {
+  color: black;
+  border-bottom: 0.3rem solid var(--Orange);
+}
+
+.cartIcon {
+  height: 20px;
+  width: 20px;
+  margin-right: 1rem;
+  fill: #69707d;
+}
+
+.cartIcon:hover {
+  cursor: pointer;
+}
+
+.profileImg {
+  height: 30px;
+  width: 30px;
+}
+
+.profileImg:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0.1rem solid var(--Orange);
+}
+
+.profileNavBreak {
+  display: none;
+}
+
+/* For Desktop  */
+@media (min-width: 376px) {
+  .profileImg {
+    height: 50px;
+    width: 50px;
+  }
+
+  .cartIcon {
+    margin-right: 3rem;
+  }
+
+  .profile {
+    margin-bottom: 0;
+  }
+
+  .profileNavBreak {
+    display: block;
+  }
+
+  .offcanvasNavbar {
+    margin-left: 3rem;
+  }
+}

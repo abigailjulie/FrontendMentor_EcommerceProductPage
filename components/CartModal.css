@@ -1,0 +1,21 @@
+.cartModal {
+  max-width: 30rem;
+  margin: 1rem 0 0 60rem;
+}
+
+.checkoutBtn {
+  background-color: var(--Orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+.checkoutBtn:hover {
+  background-color: var(--Light-orange);
+}

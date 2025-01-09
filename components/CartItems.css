@@ -1,0 +1,20 @@
+.cartImg {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+
+.cartItem {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cartFinal {
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.closeBtn {
+  width: 1rem;
+  height: 1rem;
+}

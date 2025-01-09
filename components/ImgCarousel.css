@@ -1,0 +1,20 @@
+.carouselMobileOnly {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel {
+  padding: 0 !important;
+}
+
+@media (min-width: 376px) {
+  .carouselMobileOnly {
+    display: none;
+  }
+}

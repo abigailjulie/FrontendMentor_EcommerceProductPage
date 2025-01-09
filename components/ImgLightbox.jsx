@@ -51,13 +51,11 @@ export default function ImgLightbox({
                 onClick={() => setActiveImg(image.src)}
                 className="thumbnailBtn"
                 aria-label={image.alt}
-                role="button"
               >
                 <img
                   src={image.thumb}
                   alt={image.alt}
                   className="thumbnailImg"
-                  role="img"
                 />
               </button>
             ))}

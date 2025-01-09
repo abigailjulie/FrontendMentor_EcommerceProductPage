@@ -21,7 +21,6 @@ export default function ImgCarousel() {
           <Image
             src={img1}
             alt="Photo of shoes from front perspective"
-            role="img"
             aria-labelledby="carouselItem1"
           />
         </Carousel.Item>
@@ -29,7 +28,6 @@ export default function ImgCarousel() {
           <Image
             src={img2}
             alt="Photo of shoes from back perspective"
-            role="img"
             aria-labelledby="carouselItem2"
           />
         </Carousel.Item>
@@ -37,7 +35,6 @@ export default function ImgCarousel() {
           <Image
             src={img3}
             alt="Photo of single shoe on rocks"
-            role="img"
             aria-labelledby="carouselItem3"
           />
         </Carousel.Item>
@@ -45,7 +42,6 @@ export default function ImgCarousel() {
           <Image
             src={img4}
             alt="Photo of side profile of shoe on rocks"
-            role="img"
             aria-labelledby="carouselItem4"
           />
         </Carousel.Item>

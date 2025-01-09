@@ -47,7 +47,6 @@ export default function ProductImgs() {
             src={activeImg}
             alt="Currently selected sneaker image"
             aria-live="polite" //announces changes to the reader
-            role="img"
           />
         </button>
       </div>
@@ -63,13 +62,11 @@ export default function ProductImgs() {
             onClick={() => handleImgClick(image.src)}
             className="thumbnailBtn"
             aria-label={image.alt}
-            role="button"
           >
             <img
               src={image.thumb}
               alt={image.alt}
               className="thumbnailImg"
-              role="img"
             />
           </button>
         ))}

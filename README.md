@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/abigailjulie/FrontendMentor_EcommerceProductPage)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://frontendmentorecommerceproductpage.vercel.app/)
 
 ## My process
 

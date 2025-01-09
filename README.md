@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/ecommerce-product-page/src/assets/images/screenshot.JPG)
+![](./src/assets/images/screenshot.JPG)
 
 ### Links
 

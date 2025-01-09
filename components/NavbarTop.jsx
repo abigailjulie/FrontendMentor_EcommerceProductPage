@@ -61,7 +61,7 @@ export default function NavbarTop({ quantity, resetQuantity }) {
         </Navbar>
         <div className="profile d-flex flex-row align-items-center">
           <div className="cartPill">
-            {quantity > 0 && <QuantityPill quantity={quantity} />}
+            {isAddedToCart && <QuantityPill quantity={quantity} />}
 
             <img
               src={cart}

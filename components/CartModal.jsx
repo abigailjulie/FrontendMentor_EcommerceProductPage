@@ -17,15 +17,21 @@ export default function CartModal({
           <Modal.Title>Cart</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <CartItems quantity={quantity} resetQuantity={resetQuantity} />
+          {quantity === 0 ? (
+            <p className="emptyCart">Your cart is empty.</p>
+          ) : (
+            <CartItems quantity={quantity} resetQuantity={resetQuantity} />
+          )}
 
-          <button
-            className="checkoutBtn d-flex justify-content-center align-items-center"
-            aria-labelledby="Checkout cart"
-            onClick={handleClose}
-          >
-            Checkout
-          </button>
+          {quantity > 0 && (
+            <button
+              className="checkoutBtn d-flex justify-content-center align-items-center"
+              aria-labelledby="Checkout cart"
+              onClick={handleClose}
+            >
+              Checkout
+            </button>
+          )}
         </Modal.Body>
       </Modal>
     </>

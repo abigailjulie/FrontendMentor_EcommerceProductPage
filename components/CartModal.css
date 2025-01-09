@@ -3,6 +3,15 @@
   margin: 1rem 0 0 60rem;
 }
 
+.cartModal .emptyCart {
+  font-weight: 700;
+  color: var(--Dark-grayish-blue);
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .checkoutBtn {
   background-color: var(--Orange);
   display: flex;

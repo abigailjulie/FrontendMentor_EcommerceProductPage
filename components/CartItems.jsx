@@ -16,7 +16,7 @@ export default function CartItems({ quantity, resetQuantity }) {
       <div className="cartTotal">
         <h1 className="cartItem">Fall Limited Addition Sneakers</h1>
         <p className="cartCal">
-          $125.00 x ${quantity}
+          $125.00 x {quantity}
           <span className="cartFinal">${finalTotal}.00</span>
         </p>
       </div>

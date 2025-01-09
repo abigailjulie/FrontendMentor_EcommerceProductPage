@@ -14,14 +14,24 @@ export default function CartItems({ quantity, resetQuantity }) {
         alt="sneaker product 1 - Front view"
       />
       <div className="cartTotal">
-        <h1 className="cartItem">Fall Limited Addition Sneakers</h1>
+        <h2 className="cartItem">Fall Limited Addition Sneakers</h2>
         <p className="cartCal">
           $125.00 x {quantity}
-          <span className="cartFinal">${finalTotal}.00</span>
+          <span className="cartFinal" aria-live="polite">
+            ${finalTotal}.00
+          </span>
         </p>
       </div>
-      <button className="border-0 bg-transparent" onClick={resetQuantity}>
-        <img src={trash} className="closeBtn" alt="Close icon" />
+      <button
+        className="border-0 bg-transparent"
+        aria-label="Remove item from cart"
+        onClick={resetQuantity}
+      >
+        <img
+          src={trash}
+          className="closeBtn"
+          alt="Trash icon representing the action to remove the item"
+        />
       </button>
     </section>
   );

@@ -62,14 +62,21 @@ export default function NavbarTop({ quantity, resetQuantity }) {
         <div className="profile d-flex flex-row align-items-center">
           <div className="cartPill">
             <QuantityPill quantity={quantity} />
-            <img src={cart} alt="Cart Icon" className="cartIcon" />
+            <img
+              src={cart}
+              alt="Cart Icon"
+              className="cartIcon"
+              aria-label="View cart"
+            />
           </div>
 
           <img
             src={profileImg}
             alt="User profile"
             className="profileImg"
+            aria-label="User profile, open profile modal"
             onClick={handleShowModal}
+            role="button"
           />
         </div>
       </div>

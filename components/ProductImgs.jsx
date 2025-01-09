@@ -39,12 +39,15 @@ export default function ProductImgs() {
         <button
           className="border-0 bg-transparent"
           onClick={handleActiveImgClick}
+          aria-label="Open image in full size view"
+          aria-haspopup="dialog" // Indicates that clicking this button will open a dialog (lightbox)
         >
           <img
             className="activeImg"
             src={activeImg}
             alt="Currently selected sneaker image"
             aria-live="polite" //announces changes to the reader
+            role="img"
           />
         </button>
       </div>
@@ -60,6 +63,7 @@ export default function ProductImgs() {
             onClick={() => handleImgClick(image.src)}
             className="thumbnailBtn"
             aria-label={image.alt}
+            role="button"
           >
             <img
               src={image.thumb}
@@ -77,6 +81,7 @@ export default function ProductImgs() {
         activeImg={activeImg}
         images={images}
         setActiveImg={setActiveImg}
+        aria-labelledby="image-lightbox"
       />
     </div>
   );

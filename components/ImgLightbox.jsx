@@ -15,19 +15,27 @@ export default function ImgLightbox({
       onHide={handleClose}
       className="lightbox"
       backdrop="static"
+      role="dialog"
       aria-labelledby="contained-modal-title-vcenter"
+      aria-modal="true"
+      tabindex="-1"
       centered
     >
       <Modal.Header className="modalHeader" closeButton></Modal.Header>
       <Modal.Body>
         <div className="productImgsContainer">
           {/* Active Image */}
-          <div className="activeImgContainter">
+          <div
+            className="activeImgContainter"
+            role="figure"
+            aria-labelledby="activeImageDescription"
+          >
             <img
               className="activeImg"
               src={activeImg}
               alt="Currently selected sneaker image"
               aria-live="polite"
+              id="activeImageDescription"
             />
           </div>
 
@@ -35,7 +43,7 @@ export default function ImgLightbox({
           <div
             className="thumbnails d-flex flex-row  align-items-center justify-content-between"
             role="group"
-            aria-label="Product images"
+            aria-label="Product images thumbnails"
           >
             {images.map((image) => (
               <button
@@ -43,6 +51,7 @@ export default function ImgLightbox({
                 onClick={() => setActiveImg(image.src)}
                 className="thumbnailBtn"
                 aria-label={image.alt}
+                role="button"
               >
                 <img
                   src={image.thumb}

@@ -10,9 +10,18 @@ export default function NavbarTop({ quantity, resetQuantity }) {
   //Create a state that will toggle Modal
   const [showModal, setShowModel] = useState(false);
 
+  //Create a state that will track if add to cart is clicked
+  const [cartClick, setCartClick] = useState(false);
+
   //Create a function that sets it to true and false
   const handleShowModal = () => setShowModel(true);
   const handleCloseModal = () => setShowModel(false);
+
+  //Create a fuction that sets cartClick to true
+  const handleAddToCart = () => {
+    addToCart();
+    setCartClick(true);
+  };
 
   return (
     <>
@@ -61,7 +70,7 @@ export default function NavbarTop({ quantity, resetQuantity }) {
         </Navbar>
         <div className="profile d-flex flex-row align-items-center">
           <div className="cartPill">
-            {isAddedToCart && <QuantityPill quantity={quantity} />}
+            {cartClick && quantity > 0 && <QuantityPill quantity={quantity} />}
 
             <img
               src={cart}
